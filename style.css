@@ -1,0 +1,641 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  width: 100%;
+  padding: 1.5em;
+}
+main nav {
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+main nav .links {
+  display: none;
+}
+main nav h1 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+main nav h1 sup {
+  font-size: 0.6em;
+}
+main nav a {
+  font-size: 1.2em;
+  color: black;
+  text-decoration: none;
+}
+main .view-1 {
+  margin-top: 1.5em;
+  width: 100%;
+  gap: 1em;
+  flex-direction: column;
+  display: flex;
+}
+main .view-1 .img {
+  width: 100%;
+}
+main .view-1 .img img {
+  width: 100%;
+  height: 100%;
+}
+main .view-1 .text {
+  margin-top: -1.6em;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+main .view-1 .text p {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.2em;
+  font-family: monospace;
+}
+main .view-2 {
+  width: 100%;
+  margin-top: 1em;
+  gap: 1em;
+  flex-direction: column;
+  display: flex;
+}
+main .view-2 .hero-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+main .view-2 .hero-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view-2 .hero-text h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 0.9;
+  font-size: 3em;
+}
+main .view-2 .hero-text p {
+  opacity: 0.8;
+  margin-top: 1em;
+  font-family: monospace;
+  font-size: 1.5em;
+}
+main .view-2 .hero-text .services {
+  margin-top: 1.5em;
+  gap: 1em;
+  flex-direction: column;
+  display: flex;
+}
+main .view-2 .hero-text .services .service {
+  display: flex;
+  justify-content: space-between;
+}
+main .view-2 .hero-text .services .service h1 {
+  opacity: 0.9;
+  font-weight: 400;
+  font-size: 1.7em;
+}
+main .view-3 {
+  width: 100%;
+  margin-top: 1.5em;
+  gap: 1em;
+  flex-direction: column;
+  display: flex;
+}
+main .view-3 .img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+main .view-3 .img img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view-3 .vertical-text {
+  display: flex;
+  gap: 1em;
+}
+main .view-3 .vertical-text p {
+  writing-mode: vertical-lr;
+}
+main .view-3 .vertical-text .text h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 0.9;
+  font-size: 3em;
+}
+main .view-3 .vertical-text .text p {
+  writing-mode: initial;
+  opacity: 0.6;
+  margin-top: 0.7em;
+  font-family: monospace;
+  font-size: 1.5em;
+}
+main .view-4 {
+  width: 100%;
+  margin-top: 1em;
+}
+main .view-4 .top-heading .heading h1 {
+  font-size: 3.5em;
+  opacity: 2;
+  font-weight: 300;
+}
+main .view-4 .top-heading .heading h1 br {
+  display: none;
+}
+main .view-4 .top-heading .service-desc {
+  display: flex;
+  margin-top: 0.8em;
+  flex-direction: column;
+  gap: 0.5em;
+}
+main .view-4 .top-heading .service-desc .hdn {
+  display: block;
+}
+main .view-4 .top-heading .service-desc .service {
+  gap: 1em;
+  flex-direction: column;
+  display: flex;
+}
+main .view-4 .top-heading .service-desc .service h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.8em;
+}
+main .view-4 .top-heading .service-desc .service p {
+  font-size: 1.3em;
+  line-height: 1.5;
+  font-family: monospace;
+  opacity: 0.6;
+}
+main .view-4 .top-heading .service-desc .service .btn {
+  margin-top: 0.8em;
+  opacity: 1;
+  text-transform: uppercase;
+}
+main .view-4 .top-heading .service-desc .service i {
+  padding: 0.2em;
+  border-radius: 50%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.847);
+  border: 1px solid black;
+  margin-right: 1em;
+  font-weight: 100;
+  gap: 2em;
+  font-size: 1em;
+}
+main .view-4 .top-heading hr {
+  margin: 1em 0;
+}
+main .view-4 .top-heading hr:nth(last) {
+  display: none;
+}
+main .view-4 .image {
+  margin-top: 2em;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+main .view-4 .image img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .after-4,
+main .after-6 {
+  margin: 3em 0;
+}
+main .view-5 {
+  width: 100%;
+  gap: 1em;
+  flex-direction: column;
+  display: flex;
+}
+main .view-5 .work-img {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+main .view-5 .work-img img {
+  width: 100%;
+  height: 100%;
+}
+main .view-5 .top-part,
+main .view-5 .bottom-part {
+  gap: 1.5em;
+  flex-direction: column;
+  display: flex;
+}
+main .view-5 .top-part .img-2,
+main .view-5 .bottom-part .img-2 {
+  width: 100%;
+  display: none;
+  aspect-ratio: 1/1;
+}
+main .view-5 .top-part .img-2 img,
+main .view-5 .bottom-part .img-2 img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view-5 .top-part .img-1,
+main .view-5 .bottom-part .img-1 {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+main .view-5 .top-part .img-1 img,
+main .view-5 .bottom-part .img-1 img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+main .view-5 .top-part .text h2,
+main .view-5 .bottom-part .text h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.2em;
+}
+main .view-5 .top-part .text p,
+main .view-5 .bottom-part .text p {
+  font-size: 1.3em;
+  line-height: 1.5;
+  font-family: monospace;
+  opacity: 0.6;
+}
+main .view-5 .top-part .text .btn,
+main .view-5 .bottom-part .text .btn {
+  margin-top: 0.8em;
+  opacity: 1;
+  text-transform: uppercase;
+}
+main .view-5 .top-part .text i,
+main .view-5 .bottom-part .text i {
+  padding: 0.2em;
+  border-radius: 50%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.847);
+  border: 1px solid black;
+  margin-right: 1em;
+  font-weight: 100;
+  gap: 2em;
+  font-size: 1em;
+}
+main .view-6 {
+  margin-top: 3em;
+  width: 100%;
+}
+main .view-6 .client-img {
+  width: 100%;
+}
+main .view-6 .client-img img {
+  width: 100%;
+  height: 100%;
+}
+main .view-6 .client-list {
+  margin-top: 1.5em;
+}
+main .view-6 .client-list .client h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2em;
+  opacity: 0.9;
+}
+main .view-6 .client-list .client p {
+  font-size: 1.3em;
+  line-height: 1.5;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+main .view-6 .client-list hr {
+  margin: 1.5em 0;
+}
+main footer {
+  padding: 1rem;
+  width: 100%;
+  color: white;
+  background-color: black;
+  gap: 1rem;
+  flex-direction: column;
+  display: flex;
+}
+main footer .topfooter {
+  width: 100%;
+}
+main footer .topfooter .let-create {
+  width: 100%;
+  text-align: center;
+}
+main footer .topfooter .let-create img {
+  width: 100%;
+  height: 100%;
+}
+main footer .topfooter .let-create h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 1.5em;
+  font-size: 2.2em;
+}
+main footer .topfooter .let-create h1 br {
+  display: none;
+}
+main footer .topfooter .let-create button {
+  text-transform: uppercase;
+  font-style: 1.2em;
+  font-family: monospace;
+  text-align: center;
+  border-radius: 30px;
+  padding: 1em 2em;
+}
+main footer .topfooter .nline {
+  margin: 1.5em 0;
+}
+main footer .ft {
+  width: 100%;
+  height: 30vh;
+}
+main footer .ft h1 {
+  font-size: 1.5em;
+}
+main .Pages button {
+  color: rgb(12, 12, 12);
+  background-color: white;
+  margin-top: 2rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 0.6rem 2rem;
+}
+main h1 {
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+main p {
+  margin-top: 0.3rem;
+  margin: 1.6rem 0;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+main .row {
+  width: auto;
+  height: 1.5px;
+  background-color: #363535;
+}
+
+@media (min-width: 900px) {
+  main {
+    gap: 2em;
+    flex-direction: column;
+    display: flex;
+  }
+  main nav {
+    padding: 2rem 4rem;
+  }
+  main nav .links {
+    display: block;
+    gap: 4em;
+    display: flex;
+  }
+  main nav .links a {
+    text-transform: uppercase;
+    opacity: 0.9;
+    font-size: 0.76em;
+  }
+  main .view-1 {
+    padding: 2rem 4rem;
+  }
+  main .view-1 .text p {
+    opacity: 0.8;
+    font-size: 1.1em;
+  }
+  main .view-2 {
+    padding: 2rem 4rem;
+    flex-direction: row-reverse;
+    gap: 3em;
+  }
+  main .view-2 .hero-text h1 {
+    opacity: 0.9;
+    font-weight: 400;
+    font-size: 5.5em;
+  }
+  main .view-2 .hero-text p {
+    font-weight: 100;
+    opacity: 0.8;
+    font-size: 1.8em;
+  }
+  main .view-2 .hero-text .services .service h1 {
+    font-size: 2em;
+  }
+  main .view-3 {
+    padding: 2rem 4rem;
+    flex-direction: row;
+    gap: 3em;
+  }
+  main .view-3 .img {
+    width: 30%;
+  }
+  main .view-3 .vertical-text {
+    flex-direction: row-reverse;
+    width: 70%;
+  }
+  main .view-3 .vertical-text .text {
+    flex-direction: column;
+    display: flex;
+  }
+  main .view-3 .vertical-text .text h1 {
+    opacity: 0.9;
+    font-weight: 400;
+    font-size: 5.5em;
+  }
+  main .view-3 .vertical-text .text p {
+    width: 80%;
+    margin-top: auto;
+    font-weight: 100;
+    opacity: 0.5;
+    font-size: 1.8em;
+  }
+  main .view-4 {
+    padding: 2rem 4rem;
+    width: 100%;
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+  }
+  main .view-4 .top-heading .heading h1 {
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 7em;
+    line-height: 1;
+  }
+  main .view-4 .top-heading .heading h1 br {
+    display: block;
+  }
+  main .view-4 .top-heading .service-desc {
+    gap: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main .view-4 .top-heading .service-desc .hdn {
+    display: none;
+  }
+  main .view-4 .top-heading .service-desc .top-two,
+  main .view-4 .top-heading .service-desc .bottom-two {
+    flex-direction: column;
+    display: flex;
+    gap: 2em;
+  }
+  main .view-4 .top-heading .service-desc .top-two .service p,
+  main .view-4 .top-heading .service-desc .bottom-two .service p {
+    opacity: 0.4;
+    font-weight: 100;
+    font-size: 1.33em;
+  }
+  main .view-4 .top-heading .service-desc .top-two .service .btn,
+  main .view-4 .top-heading .service-desc .bottom-two .service .btn {
+    opacity: 1;
+    cursor: pointer;
+  }
+  main .view-4 .image {
+    width: 80%;
+  }
+  main .view-5 {
+    padding: 2rem 4rem;
+    width: 100%;
+  }
+  main .view-5 .top-part {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  main .view-5 .top-part .img-1 {
+    width: 50%;
+    aspect-ratio: 1/1;
+  }
+  main .view-5 .top-part .img-2 {
+    width: 50%;
+    display: block;
+  }
+  main .view-5 .top-part .text {
+    flex-direction: column;
+    display: flex;
+    padding: 2em;
+    width: 50%;
+  }
+  main .view-5 .top-part .text h2 {
+    font-size: 5em;
+  }
+  main .view-5 .top-part .text .btn {
+    margin-top: auto;
+  }
+  main .view-5 .bottom-part {
+    flex-direction: row-reverse;
+    display: flex;
+  }
+  main .view-5 .bottom-part .img-1 {
+    width: 50%;
+    aspect-ratio: 1/1;
+  }
+  main .view-5 .bottom-part .img-2 {
+    width: 50%;
+    display: block;
+  }
+  main .view-5 .bottom-part .text {
+    flex-direction: column;
+    display: flex;
+    padding: 2em;
+    width: 50%;
+  }
+  main .view-5 .bottom-part .text h2 {
+    font-size: 5em;
+  }
+  main .view-5 .bottom-part .text .btn {
+    margin-top: auto;
+  }
+  main .view-6 {
+    padding: 2rem 4rem;
+    width: 100%;
+  }
+  main .view-6 .client-img {
+    width: 100%;
+    text-align: end;
+  }
+  main .view-6 .client-img img {
+    width: 30%;
+  }
+  main .view-6 .client-list {
+    width: 50%;
+    text-align: end;
+    margin-left: auto;
+  }
+  main .view-6 .client-list .client {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+  main footer .topfooter {
+    text-align: center;
+  }
+  main footer .topfooter .let-create h1 {
+    width: 100%;
+    font-size: 4em;
+  }
+  main footer .topfooter .let-create h1 br {
+    display: block;
+  }
+  main footer .topfooter .let-create button {
+    margin-top: 1.5em;
+  }
+  main footer .botton-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  main footer .botton-footer .ft {
+    width: 30%;
+  }
+  main footer .botton-footer .ft h1 {
+    font-weight: 100;
+  }
+  main footer .botton-footer .ft .rowi {
+    display: none;
+  }
+  main footer .botton-footer p {
+    cursor: pointer;
+    font-size: 0.88em;
+  }
+  main footer .botton-footer .Pages button {
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 0.4rem 1.5rem;
+    cursor: pointer;
+  }
+  main footer .botton-footer .rowi {
+    background-color: #dadada;
+    width: 1px;
+    height: 20rem;
+  }
+}/*# sourceMappingURL=style.css.map */
