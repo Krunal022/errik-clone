@@ -1,6 +1,6 @@
 # 🌐 Errik Website Clone
 
-This is a clean and responsive **clone of the Errik website**, built using HTML, CSS, and JavaScript. Perfect for practice or learning modern web design and layout techniques.
+This is a clean and responsive **clone of the Errik website**, built using HTML, SCSS. Perfect for practice or learning modern web design and layout techniques.
 
 ---
 
@@ -24,7 +24,7 @@ This is a clean and responsive **clone of the Errik website**, built using HTML,
 - Pixel-perfect clone of the original Errik site  
 - Responsive design for all screen sizes  
 - Smooth animations and modern UI elements  
-- Built with plain HTML, CSS & JS  
+- Built with plain HTML, SCSS 
 
 ---
 
